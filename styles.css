@@ -41,6 +41,16 @@ ul {
   grid-template-rows: max-content 2fr
 }
 
+.top-nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#search {
+  border-radius: 25px;
+  width: 70%;
+}
+
 .header {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -49,14 +59,94 @@ ul {
 .main-nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 250px;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: max-content 2fr;
+}
+
+.welcome {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 125px);
+  grid-gap: 5px;
+}
+
+.action-buttons button {
+  height: 3vh;
+  width: 4.5vw;
+  border-radius: 25px;
 }
 
 .main-body {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-gap: 20px;
 }
 
 .card-list {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+.card {
+  padding: 20px;
+  height: 15vh;
+}
+
+.body-info {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-gap: 20px;
+  width: 20vw;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  gap: 20px;
+}
+
+.announcement-list ul {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.announcement-list li {
+  padding: 20px;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-gap: 20px;
+}
+
+.trend-list li {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.trend-info {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
 }
