@@ -30,6 +30,19 @@ ul {
   gap: 10px;
 }
 
+.side-nav, li {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
+.side-nav-icons {
+  width: 24px;
+  height: 24px;
+}
+
 .side-settings > ul {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -141,6 +154,7 @@ ul {
 .trend-list li {
   display: grid;
   grid-template-columns: repeat(2, max-content);
+  grid-gap: 10px;
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
