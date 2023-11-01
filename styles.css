@@ -25,6 +25,10 @@ ul {
   padding-left: 20px;
 }
 
+.side-bar > :not(:first-child) {
+  padding-left: 6px;
+}
+
 .side-bar > header {
   display: grid;
   grid-template-columns: repeat(2, max-content);
@@ -175,9 +179,20 @@ ul {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   border: 1px solid rgb(163, 163, 163, 0.5);
-  border-left: 10px solid rgb(179, 219, 133);
+  border-left: 12px solid rgb(172, 172, 207);
   border-radius: 25px;
   padding: 30px 20px 10px 20px;
+}
+
+.icon-row {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 25px;
+  justify-content: end;
+}
+
+.card-icons {
+  height: 24px;
 }
 
 .body-info {
