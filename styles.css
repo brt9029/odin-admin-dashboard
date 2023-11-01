@@ -192,12 +192,20 @@ ul {
   display: grid;
   grid-template-rows: max-content 1fr;
   gap: 20px;
+  padding: 15px 90px 10px 10px;
 }
 
 .announcement-list ul {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  align-items: right;
+}
+
+.announcement-list ul li {
+  padding-top: 15px;
+}
+
+.announcement-list ul li:not(:last-child) {
+  border-bottom: 1px solid black;
 }
 
 .trending {
