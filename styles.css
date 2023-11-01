@@ -1,10 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Italiana&display=swap');
+
+:root {
+  --yellow: #feda6a;
+  --silver: #d4d4dc;
+  --matte-grey: #393f4d;
+  --slate: #1d1e22;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: var(--slate);
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
 header {
   font-weight: bold;
+}
+
+h2 {
+  color: var(--yellow);
+  font-family: 'Italiana', sans-serif;
 }
 
 ul {
@@ -23,6 +42,8 @@ ul {
   gap: 50px;
   padding-top: 10px;
   padding-left: 20px;
+  background-color: var(--yellow);
+  color: var(--slate);
 }
 
 .side-bar > :not(:first-child) {
@@ -34,6 +55,10 @@ ul {
   grid-template-columns: repeat(2, max-content);
   align-items: center;
   gap: 10px;
+}
+
+.side-bar header h2 {
+  color: var(--slate);
 }
 
 .side-bar > header > img {
@@ -78,8 +103,9 @@ ul {
   align-items: bottom;
 }
 
-.top-nav-icon {
+.top-nav-icon:not(#mini-icon) {
   width: 24px;
+  filter: invert(98%) sepia(21%) saturate(5036%) hue-rotate(311deg) brightness(112%) contrast(99%);
 }
 
 .search {
@@ -93,6 +119,14 @@ ul {
   border-radius: 25px;
   width: 80%;
   height: 25px;
+  background: var(--matte-grey);
+  color: var(--silver);
+  border-color: var(--yellow);
+}
+
+input[type="search"]:focus {
+  border: 1px solid var(--silver);
+  outline: 2px solid var(--silver);
 }
 
 .user-options {
@@ -112,6 +146,10 @@ ul {
   grid-template-rows: repeat(2, 1fr);
   padding-bottom: 10px;
   padding-left: 30px;
+  background-color: var(--slate);
+  color: var(--silver);
+  border-bottom: 1px solid var(--matte-grey);
+  box-shadow: 2px 2px 2px var(--yellow);
 }
 
 .main-nav {
@@ -153,6 +191,10 @@ ul {
   height: 3vh;
   width: 4.5vw;
   border-radius: 25px;
+  border: none;
+  background-color: var(--yellow);
+  color: var(--slate);
+  box-shadow: 2px 2px 2px var(--matte-grey);
 }
 
 .main-body {
@@ -161,6 +203,7 @@ ul {
   gap: 25px;
   padding-top: 25px;
   padding-left: 25px;
+  color: var(--silver);
 }
 
 .projects {
@@ -177,11 +220,17 @@ ul {
 
 .card {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  border: 1px solid rgb(163, 163, 163, 0.5);
-  border-left: 12px solid rgb(172, 172, 207);
+  grid-template-rows: max-content 1fr max-content;
+  border: 1px solid var(--matte-grey);
+  /* border-left: 12px solid var(--yellow); */
   border-radius: 25px;
-  padding: 30px 20px 10px 20px;
+  padding: 30px 20px 30px 20px;
+  box-shadow: 2px 2px 2px var(--yellow);
+  background-color: var(--matte-grey);
+}
+
+.card strong {
+  color: var(--yellow);
 }
 
 .icon-row {
@@ -193,6 +242,7 @@ ul {
 
 .card-icons {
   height: 24px;
+  filter: invert(98%) sepia(21%) saturate(5036%) hue-rotate(311deg) brightness(112%) contrast(99%);
 }
 
 .body-info {
@@ -206,11 +256,19 @@ ul {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   padding: 10px 15px 20px 15px;
-  border: 1px solid black;
+  border: 1px solid var(--matte-grey);
+  background-color: var(--matte-grey);
+  color: var(--silver);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--yellow);
 }
 
 .announcement-list ul li {
   padding-top: 15px;
+}
+
+.announcement-list ul li strong {
+  color: var(--yellow);
 }
 
 .announcement-list ul li:first-child {
@@ -218,7 +276,7 @@ ul {
 }
 
 .announcement-list ul li:not(:last-child) {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--silver);
 }
 
 .trending {
@@ -229,6 +287,11 @@ ul {
 
 .trend-list {
   padding: 20px 20px;
+  background-color: var(--matte-grey);
+  color: var(--silver);
+  border: 1px solid var(--slate);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--yellow);
 }
 
 .trend-list ul {
@@ -246,6 +309,10 @@ ul {
 .trend-info {
   display: grid;
   grid-template-rows: repeat(2, max-content);
+}
+
+.trend-info span:last-child {
+  color: var(--yellow);
 }
 
 .trending-icon {
