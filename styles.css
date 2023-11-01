@@ -66,7 +66,7 @@ ul {
 
 .main-section {
   display: grid;
-  grid-template-rows: max-content 2fr
+  grid-template-rows: repeat(3, max-content)
 }
 
 .top-nav {
@@ -159,9 +159,7 @@ ul {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 40px;
+  width: 80vw;
 }
 
 .projects {
@@ -185,14 +183,14 @@ ul {
   display: grid;
   grid-template-rows: max-content max-content;
   grid-gap: 20px;
-  width: 20vw;
+  width: 15vw;
 }
 
 .announcements {
   display: grid;
   grid-template-rows: max-content 1fr;
   gap: 20px;
-  padding: 15px 90px 10px 10px;
+  padding: 0 25px;
 }
 
 .announcement-list ul {
@@ -210,20 +208,33 @@ ul {
 
 .trending {
   display: grid;
-  grid-template-rows: max-content 1fr;
+  grid-template-rows: repeat(2, max-content);
   grid-gap: 20px;
+}
+
+.trend-list {
+  padding: 20px 20px;
+}
+
+.trend-list ul {
+  display: grid;
+  gap: 20px;
 }
 
 .trend-list li {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-gap: 10px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  align-items: center;
 }
 
 .trend-info {
   display: grid;
   grid-template-rows: repeat(2, max-content);
+}
+
+.trending-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
 }
