@@ -44,7 +44,8 @@ ul {
   gap: 10px;
 }
 
-.side-nav, li {
+.side-nav > ul > li,
+.side-settings > ul > li {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   align-items: center;
@@ -71,8 +72,7 @@ ul {
 .top-nav {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  align-items: bottom;
 }
 
 .top-nav-icon {
@@ -101,22 +101,34 @@ ul {
 
 #mini-icon {
   border-radius: 25px;
+  width: 30px;
 }
 
 .header {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 .main-nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 250px;
+  align-items: top;
+}
+
+#main-nav-icon {
+  width: 70px;
+  border-radius: 50px;
 }
 
 .user-info {
   display: grid;
   grid-template-columns: max-content 2fr;
+  gap: 10px;
 }
 
 .welcome {
@@ -124,10 +136,17 @@ ul {
   grid-template-rows: 1fr 1fr;
 }
 
+.welcome span:first-child {
+  display: grid;
+  align-items: end;
+  font-size: 12px;
+}
+
 .action-buttons {
   display: grid;
-  grid-template-columns: repeat(3, 125px);
-  grid-gap: 5px;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 30px;
+  justify-content: left;
 }
 
 .action-buttons button {
@@ -178,10 +197,7 @@ ul {
 .announcement-list ul {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-}
-
-.announcement-list li {
-  padding: 20px;
+  align-items: right;
 }
 
 .trending {
